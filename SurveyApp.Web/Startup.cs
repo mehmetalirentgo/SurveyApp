@@ -29,7 +29,7 @@ namespace SurveyApp.Web
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddDbContext<ApplicationDbContext>(options =>
-					options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+					options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); //TODO:  Change ConnectionString
 			services.AddRouting(options => options.LowercaseUrls = true);
 			services.AddControllersWithViews();
 			services.AddRazorPages();
